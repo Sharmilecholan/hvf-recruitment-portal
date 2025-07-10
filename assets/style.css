@@ -1,0 +1,590 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f4f7;
+}
+
+
+header {
+  background-color: #002b5c;
+  color: white;
+  padding: 15px 30px;
+  border-bottom: 4px solid #4b5320;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 100px !important;
+  height: auto !important;
+  max-height: 90px;
+}
+
+
+.title-block {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.title-block h1 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.title-block h2 {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #cce5ff;
+}
+
+.title-block p {
+  font-size: 13px;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+/* LEFT: Job Listings */
+.jobs {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.job-card {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #e6f0ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.job-header:hover {
+  background: #cce0ff;
+}
+
+.job-title {
+  font-size: 16px;
+}
+
+.job-vacancy {
+  background: #004080;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.job-details {
+  display: none;
+  padding: 15px;
+  background: #f9f9f9;
+  font-size: 14px;
+}
+
+/* RIGHT: Login Box */
+.login-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+  margin-top: 0;
+}
+
+form label {
+  margin-top: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #00509e;
+}
+
+.error {
+  color: red;
+  background: #ffe6e6;
+  padding: 8px;
+  border-radius: 4px;
+}
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo.left {
+  left: 0;
+}
+
+.logo.right {
+  right: 0;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0 auto;
+}
+.logout-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px 0 0;
+  margin-top: 0px;
+}
+
+.logout-wrapper form button {
+  background-color: #b22222;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-wrapper form button:hover {
+  background-color: #8b0000;
+}
+
+
+/* Milestone Style Progress Bar */
+.progressbar {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto 20px;
+  max-width: 900px;
+  position: relative;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 50px;
+  right: 50px;
+  height: 4px;
+  background: #dcdcdc;
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.bullet {
+  width: 40px;
+  height: 40px;
+  background: #dcdcdc;
+  color: #555;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Active Step */
+.step.active .bullet {
+  background: #002b5c;
+  color: white;
+}
+.step.active .label {
+  color: #002b5c;
+}
+/* Step 1 Form Styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #002b5c;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  font-family: inherit;
+  appearance: none;     /* ✅ removes native arrow style */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+}
+
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  background-color: #002b5c;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto; /* Aligns button to right */
+}
+
+
+form button:hover {
+  background-color: #003c7b;
+}
+.edu-entry {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  background: #fdfdfd;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #002b5c;
+}
+
+.form-row input,
+.form-row select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.add-btn,
+.next-btn {
+  padding: 10px 18px;
+  margin-right: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #e4e4e4;
+  color: #333;
+}
+
+.next-btn {
+  background-color: #002b5c;
+  color: white;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.add-btn,
+.next-btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.add-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.next-btn {
+  background-color: #002b5c;
+  color: white;
+}
+
+.next-btn:hover {
+  background-color: #014494;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-row input[type="file"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+.declaration-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #004080;
+  cursor: pointer;
+}
+
+.next-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 25px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #003060;
+}
+
+.error {
+  color: #b30000;
+  background: #ffe6e6;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ffcccc;
+  border-radius: 6px;
+}
+.success-box {
+  background: #e6f7e6;
+  border: 1px solid #b3e6b3;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a4d1a;
+  margin-top: 20px;
+}
+
+.success-heading {
+  text-align: center;
+  color: #006600;
+  margin-bottom: 15px;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 90vh;
+}
+
+.admin-sidebar {
+  width: 200px;
+  background: #1d3557;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar button {
+  background: #f1faee;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-sidebar button.active {
+  background: #457b9d;
+  color: white;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 30px;
+  background: #f8f9fa;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-header {
+  padding: 15px;
+  background: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
